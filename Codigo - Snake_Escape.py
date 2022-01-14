@@ -906,10 +906,6 @@ while not terminou:
             fim = True
             
         #Desenho da tela
-        #OBS: Embora desenhar antes de fazer os cálculos como posição etc, garanta um melhor desempenho,
-        # ao desenhar apenas no final do loop a jogabilidade melhora, uma vez que a cobra passa a responder
-        # melhor ao comando do teclado e o desempenho não demonstra uma queda sensível. 
-        # Por esta razão decidimos deixar para desenhar a tela ao final do loop.
         if not fim:
             tela.blit(cen1, (0,0))
             if vidas <= 2:
